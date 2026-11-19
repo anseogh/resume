@@ -68,7 +68,7 @@ void AOCGameMode::StartPlay()
 
 void AOCGameMode::RestartPlayer(AController* NewPlayer)
 {
-	if (!NewPlayer || NewPlayer->IsPendingKillPending())
+	if (!IsValid(NewPlayer))
 	{
 		return;
 	}
