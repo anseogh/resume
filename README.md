@@ -11,7 +11,7 @@ GTA 스타일 게임의 **핵심 시스템 뼈대**를 UE5 C++로 구현한 프�
 
 ## 실행 방법
 
-1. Unreal Engine **5.4 이상**과 Visual Studio 2022(“C++를 사용한 게임 개발” 워크로드)를 설치합니다.
+1. Unreal Engine **5.8**과 Visual Studio 2022(“C++를 사용한 게임 개발” 워크로드)를 설치합니다. 런처의 **새 프로젝트**가 아니라, 이 저장소의 `OpenCity.uproject`를 엽니다.
 2. `OpenCity.uproject`를 우클릭한 뒤 **Generate Visual Studio project files**를 선택합니다.
 3. `OpenCity.uproject`를 더블클릭하면 C++ 모듈 빌드를 묻습니다. **Yes**를 누릅니다.
 4. 에디터에서 **Play**를 누릅니다. 빈 맵이어도 게임 모드가 도시, 하늘, 플레이어를 자동으로 생성합니다.
