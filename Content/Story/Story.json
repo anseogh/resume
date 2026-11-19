@@ -1,0 +1,107 @@
+{
+	"title": "네온 하버",
+	"missions": [
+		{
+			"id": "m01_homecoming",
+			"title": "귀향",
+			"start": [3, 4],
+			"intro": [
+				{ "speaker": "민재", "text": "도윤아! 5년 만이다. 출소 축하한다, 진짜로." },
+				{ "speaker": "도윤", "text": "축하는 됐고. 약속한 일자리는?" },
+				{ "speaker": "민재", "text": "네온 하버에서 일하려면 차부터 있어야지. 아무 차나 하나 구해서 항구 창고로 와." }
+			],
+			"objectives": [
+				{ "type": "enter_vehicle", "text": "아무 차나 탑승하라 (차 근처에서 F)" },
+				{ "type": "drive_to", "text": "항구 창고로 운전하라", "at": [8, 6], "radius": 700 }
+			],
+			"outro": [
+				{ "speaker": "민재", "text": "운전 실력은 녹슬지 않았네. 이건 착수금." },
+				{ "speaker": "민재", "text": "내일부턴 진짜 일이다. 박 회장님이 형을 보고 싶어 하셔." }
+			],
+			"reward": 1500
+		},
+		{
+			"id": "m02_collection",
+			"title": "빚 수금",
+			"start": [8, 6],
+			"intro": [
+				{ "speaker": "박 회장", "text": "자네가 강도윤인가. 내 돈을 떼먹고 숨어버린 흑사파 놈들이 있네." },
+				{ "speaker": "도윤", "text": "몇 명입니까?" },
+				{ "speaker": "박 회장", "text": "셋. 북쪽 공사장 근처에 숨어 있지. 돈은 필요 없어. 본보기만 보여주게." }
+			],
+			"objectives": [
+				{ "type": "goto", "text": "흑사파 은신처로 이동하라", "at": [10, 9], "radius": 1200 },
+				{ "type": "eliminate", "text": "흑사파 조직원을 처치하라", "at": [10, 9], "count": 3 },
+				{ "type": "lose_wanted", "text": "경찰을 따돌려라" }
+			],
+			"outro": [
+				{ "speaker": "박 회장", "text": "깔끔하군. 자넨 쓸모가 있어." },
+				{ "speaker": "민재", "text": "형, 회장님 눈에 들었어. 이제 우리 팔자 핀다." }
+			],
+			"reward": 4000
+		},
+		{
+			"id": "m03_decoy",
+			"title": "미끼",
+			"start": [6, 10],
+			"intro": [
+				{ "speaker": "민재", "text": "회장님 물건이 항구로 들어오는데 경찰이 쫙 깔렸어." },
+				{ "speaker": "민재", "text": "형이 시내에서 소란 좀 피워서 경찰 시선을 끌어줘. 딱 1분만." },
+				{ "speaker": "도윤", "text": "1분이면 충분하지." }
+			],
+			"objectives": [
+				{ "type": "get_wanted", "text": "소란을 일으켜 수배 레벨 2를 받아라", "stars": 2 },
+				{ "type": "survive", "text": "경찰을 붙잡아 두어라", "seconds": 60 },
+				{ "type": "lose_wanted", "text": "이제 경찰을 따돌려라" }
+			],
+			"outro": [
+				{ "speaker": "민재", "text": "물건 무사히 들어왔어! 형 진짜 미쳤다." },
+				{ "speaker": "도윤", "text": "다음엔 네가 미끼 해라." }
+			],
+			"reward": 6000
+		},
+		{
+			"id": "m04_rival",
+			"title": "전쟁의 서막",
+			"start": [5, 8],
+			"intro": [
+				{ "speaker": "박 회장", "text": "흑사파 두목 '용'이 보복을 준비 중이라는군." },
+				{ "speaker": "박 회장", "text": "선수를 치게. 동쪽 무기 창고를 쓸어버려." }
+			],
+			"objectives": [
+				{ "type": "drive_to", "text": "흑사파 무기 창고로 차를 몰아라", "at": [12, 4], "radius": 1200 },
+				{ "type": "eliminate", "text": "창고를 지키는 흑사파를 처치하라", "at": [12, 4], "count": 5 },
+				{ "type": "drive_to", "text": "항구 창고로 복귀하라", "at": [8, 6], "radius": 700 }
+			],
+			"outro": [
+				{ "speaker": "민재", "text": "형... 회장님이 형 이름을 경찰한테 흘렸대." },
+				{ "speaker": "도윤", "text": "...뭐?" },
+				{ "speaker": "민재", "text": "흑사파 일 전부 형한테 뒤집어씌우려는 거야. 난 형 편이야." }
+			],
+			"reward": 8000
+		},
+		{
+			"id": "m05_betrayal",
+			"title": "배신",
+			"start": [8, 6],
+			"intro": [
+				{ "speaker": "도윤", "text": "박 회장. 날 팔아넘기려 했다고?" },
+				{ "speaker": "박 회장", "text": "사업일 뿐이네, 강군. 너무 원망하지 말게." },
+				{ "speaker": "민재", "text": "회장 경호원들이 도심 한복판 빌딩에 모여 있어. 끝내자, 형." }
+			],
+			"objectives": [
+				{ "type": "goto", "text": "도심 빌딩으로 가라", "at": [7, 7], "radius": 1200 },
+				{ "type": "eliminate", "text": "박 회장의 경호원을 모두 처치하라", "at": [7, 7], "count": 6 },
+				{ "type": "survive", "text": "민재가 차를 가져올 때까지 버텨라", "seconds": 45 },
+				{ "type": "lose_wanted", "text": "도시를 빠져나가 경찰을 따돌려라" }
+			],
+			"outro": [
+				{ "speaker": "박 회장", "text": "자, 잠깐! 돈이라면 얼마든지..." },
+				{ "speaker": "도윤", "text": "이 도시는 이제 내 거다." },
+				{ "speaker": "민재", "text": "형... 아니, 보스. 이제 어디로 갈까?" },
+				{ "speaker": "도윤", "text": "어디든. 이 도시 전부가 우리 거니까." }
+			],
+			"reward": 20000
+		}
+	]
+}
